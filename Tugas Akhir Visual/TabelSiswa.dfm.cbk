@@ -1,8 +1,8 @@
 object Form5: TForm5
-  Left = 334
-  Top = 69
+  Left = 296
+  Top = 199
   Width = 924
-  Height = 489
+  Height = 493
   Caption = 'Tabel Siswa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET

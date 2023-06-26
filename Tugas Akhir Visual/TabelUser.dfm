@@ -1,9 +1,9 @@
-object Form5: TForm5
-  Left = 334
-  Top = 69
+object Form7: TForm7
+  Left = 246
+  Top = 168
   Width = 924
-  Height = 489
-  Caption = 'Tabel Siswa'
+  Height = 480
+  Caption = 'Tabel User'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,228 +11,147 @@ object Form5: TForm5
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 48
-    Top = 32
-    Width = 17
+    Left = 16
+    Top = 40
+    Width = 41
     Height = 13
-    Caption = 'NIS'
+    Caption = 'Siswa ID'
   end
   object lbl2: TLabel
-    Left = 48
-    Top = 64
-    Width = 24
+    Left = 16
+    Top = 72
+    Width = 48
     Height = 13
-    Caption = 'NISN'
+    Caption = 'Username'
   end
   object lbl3: TLabel
-    Left = 48
+    Left = 16
     Top = 104
-    Width = 65
+    Width = 46
     Height = 13
-    Caption = 'NAMA SISWA'
+    Caption = 'Password'
   end
   object lbl4: TLabel
-    Left = 48
+    Left = 16
     Top = 136
-    Width = 17
+    Width = 25
     Height = 13
-    Caption = 'NIK'
+    Caption = 'Level'
   end
   object lbl5: TLabel
-    Left = 48
-    Top = 160
-    Width = 72
+    Left = 16
+    Top = 168
+    Width = 31
     Height = 13
-    Caption = 'TEMPAT LAHIR'
-  end
-  object lbl6: TLabel
-    Left = 48
-    Top = 192
-    Width = 79
-    Height = 13
-    Caption = 'TANGGAL LAHIR'
-  end
-  object lbl7: TLabel
-    Left = 304
-    Top = 32
-    Width = 11
-    Height = 13
-    Caption = 'JK'
-  end
-  object lbl8: TLabel
-    Left = 304
-    Top = 64
-    Width = 40
-    Height = 13
-    Caption = 'ALAMAT'
-  end
-  object lbl9: TLabel
-    Left = 304
-    Top = 96
-    Width = 23
-    Height = 13
-    Caption = 'TELP'
-  end
-  object lbl10: TLabel
-    Left = 304
-    Top = 128
-    Width = 38
-    Height = 13
-    Caption = 'STATUS'
+    Caption = 'Status'
   end
   object edt1: TEdit
-    Left = 144
-    Top = 32
-    Width = 145
+    Left = 152
+    Top = 40
+    Width = 153
     Height = 21
     TabOrder = 0
+    Text = 'edt1'
   end
   object edt2: TEdit
-    Left = 144
-    Top = 64
-    Width = 145
+    Left = 152
+    Top = 72
+    Width = 153
     Height = 21
     TabOrder = 1
+    Text = 'edt2'
   end
   object edt3: TEdit
-    Left = 144
-    Top = 96
-    Width = 145
+    Left = 152
+    Top = 104
+    Width = 153
     Height = 21
     TabOrder = 2
+    Text = 'edt3'
   end
   object edt4: TEdit
-    Left = 144
-    Top = 128
-    Width = 145
+    Left = 152
+    Top = 136
+    Width = 153
     Height = 21
     TabOrder = 3
+    Text = 'edt4'
   end
   object edt5: TEdit
-    Left = 144
-    Top = 160
-    Width = 145
+    Left = 152
+    Top = 168
+    Width = 153
     Height = 21
     TabOrder = 4
+    Text = 'edt5'
   end
-  object cbb1: TComboBox
-    Left = 392
-    Top = 32
-    Width = 145
-    Height = 21
-    ItemHeight = 13
+  object b1: TButton
+    Left = 24
+    Top = 216
+    Width = 89
+    Height = 41
+    Caption = 'BARU'
     TabOrder = 5
-    Items.Strings = (
-      'L'
-      'P')
   end
-  object cbb2: TComboBox
-    Left = 392
-    Top = 128
-    Width = 145
-    Height = 21
-    ItemHeight = 13
+  object b2: TButton
+    Left = 128
+    Top = 216
+    Width = 89
+    Height = 41
+    Caption = 'SIMPAN'
     TabOrder = 6
-    Items.Strings = (
-      'aktif'
-      'tidak')
   end
-  object edt6: TEdit
-    Left = 392
-    Top = 64
-    Width = 145
-    Height = 21
+  object b3: TButton
+    Left = 224
+    Top = 216
+    Width = 89
+    Height = 41
+    Caption = 'EDIT'
     TabOrder = 7
   end
-  object edt7: TEdit
-    Left = 392
-    Top = 96
-    Width = 145
-    Height = 21
+  object b4: TButton
+    Left = 320
+    Top = 216
+    Width = 89
+    Height = 41
+    Caption = 'HAPUS'
     TabOrder = 8
+  end
+  object b5: TButton
+    Left = 416
+    Top = 216
+    Width = 89
+    Height = 41
+    Caption = 'BATAL'
+    TabOrder = 9
+  end
+  object b6: TButton
+    Left = 512
+    Top = 216
+    Width = 97
+    Height = 41
+    Caption = 'LAPORAN'
+    TabOrder = 10
   end
   object dg1: TDBGrid
     Left = 24
-    Top = 320
-    Width = 857
-    Height = 121
+    Top = 272
+    Width = 585
+    Height = 120
     DataSource = ds1
-    TabOrder = 9
+    TabOrder = 11
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
-    OnCellClick = dg1CellClick
-  end
-  object b1: TButton
-    Left = 32
-    Top = 256
-    Width = 97
-    Height = 49
-    Caption = 'BARU'
-    TabOrder = 10
-    OnClick = b1Click
-  end
-  object b2: TButton
-    Left = 136
-    Top = 256
-    Width = 97
-    Height = 49
-    Caption = 'SIMPAN'
-    TabOrder = 11
-    OnClick = b2Click
-  end
-  object b3: TButton
-    Left = 240
-    Top = 256
-    Width = 97
-    Height = 49
-    Caption = 'EDIT'
-    TabOrder = 12
-    OnClick = b3Click
-  end
-  object b4: TButton
-    Left = 344
-    Top = 256
-    Width = 97
-    Height = 49
-    Caption = 'HAPUS'
-    TabOrder = 13
-    OnClick = b4Click
-  end
-  object b5: TButton
-    Left = 448
-    Top = 256
-    Width = 105
-    Height = 49
-    Caption = 'BATAL'
-    TabOrder = 14
-    OnClick = b5Click
-  end
-  object b6: TButton
-    Left = 560
-    Top = 256
-    Width = 91
-    Height = 49
-    Caption = 'LAPORAN'
-    TabOrder = 15
-    OnClick = b6Click
-  end
-  object edt8: TEdit
-    Left = 144
-    Top = 192
-    Width = 145
-    Height = 21
-    TabOrder = 16
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 640
+    Left = 344
     Top = 144
   end
   object con1: TZConnection
@@ -250,7 +169,7 @@ object Form5: TForm5
     LibraryLocation = 
       'D:\Folder PC Z\Kuliah\TUGAS VISUAL AKHIR\Tugas Akhir Visual\libm' +
       'ysql.dll'
-    Left = 640
+    Left = 344
     Top = 88
   end
   object frxdbdtst1: TfrxDBDataset
@@ -258,7 +177,7 @@ object Form5: TForm5
     CloseDataSource = False
     DataSet = zqry1
     BCDToCurrency = False
-    Left = 712
+    Left = 416
     Top = 88
   end
   object frxrprt1: TfrxReport
@@ -277,7 +196,7 @@ object Form5: TForm5
       'begin'
       ''
       'end.')
-    Left = 712
+    Left = 416
     Top = 144
     Datasets = <
       item
@@ -759,11 +678,11 @@ object Form5: TForm5
     Connection = con1
     Active = True
     SQL.Strings = (
-      'select * from table_siswa')
+      'select * from tabel_user')
     Params = <>
     Properties.Strings = (
       '')
-    Left = 640
+    Left = 344
     Top = 40
   end
 end

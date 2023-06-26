@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 110
-  Top = 189
+  Left = 263
+  Top = 190
   Width = 1186
   Height = 440
   Caption = 'TABEL ORTU'

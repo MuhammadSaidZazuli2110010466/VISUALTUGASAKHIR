@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 269
-  Top = 169
+  Left = 307
+  Top = 146
   Width = 924
   Height = 542
   Caption = 'Tabel Poin'
