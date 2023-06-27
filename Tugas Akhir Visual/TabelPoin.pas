@@ -29,6 +29,7 @@ type
     frxrprt1: TfrxReport;
     lbl1: TLabel;
     cbb2: TComboBox;
+    frxrprt2: TfrxReport;
     procedure b1Click(Sender: TObject);
     procedure b2Click(Sender: TObject);
     procedure b3Click(Sender: TObject);
