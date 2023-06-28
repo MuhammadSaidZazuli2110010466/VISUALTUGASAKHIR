@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 192
-  Top = 152
+  Left = 129
+  Top = 151
   Width = 1204
   Height = 408
   Caption = 'TABEL WALI'

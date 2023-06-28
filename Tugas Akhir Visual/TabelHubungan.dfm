@@ -1,7 +1,7 @@
 object Form6: TForm6
-  Left = 335
-  Top = 158
-  Width = 924
+  Left = 292
+  Top = 156
+  Width = 817
   Height = 480
   Caption = 'Tabel Hubungan'
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form6: TForm6
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -452,6 +453,24 @@ object Form6: TForm6
     Properties.Strings = (
       '')
     Left = 344
+    Top = 40
+  end
+  object zqry2: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from table_siswa')
+    Params = <>
+    Left = 416
+    Top = 40
+  end
+  object zqry3: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from tabel_ortu')
+    Params = <>
+    Left = 480
     Top = 40
   end
 end

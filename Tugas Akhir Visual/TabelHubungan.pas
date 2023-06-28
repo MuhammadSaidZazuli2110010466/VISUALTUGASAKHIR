@@ -29,6 +29,8 @@ type
     edt2: TEdit;
     cbb1: TComboBox;
     cbb2: TComboBox;
+    zqry2: TZQuery;
+    zqry3: TZQuery;
     procedure b1Click(Sender: TObject);
     procedure editbersih;
     procedure  posisiawal;
@@ -38,6 +40,7 @@ type
     procedure editenable;
     procedure b3Click(Sender: TObject);
     procedure b4Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -175,6 +178,22 @@ end else
 begin
 ShowMessage('DATA BATAL DIHAPUS');
 posisiawal;
+end;
+end;
+
+procedure TForm6.FormCreate(Sender: TObject);
+begin
+zqry2.First;
+while not zqry2.Eof do
+begin
+  cbb1.items.add(zqry2.fieldbyname('id_siswa').asstring);
+  zqry2.Next;
+end;
+zqry3.First;
+while not zqry3.Eof do
+begin
+  cbb2.items.add(zqry3.fieldbyname('id_ortu').asstring);
+  zqry3.Next;
 end;
 end;
 

@@ -8,12 +8,16 @@ uses
   TabelPoin in 'TabelPoin.pas' {Form4},
   TabelSiswa in 'TabelSiswa.pas' {Form5},
   TabelHubungan in 'TabelHubungan.pas' {Form6},
-  TabelUser in 'TabelUser.pas' {Form7};
+  TabelUser in 'TabelUser.pas' {Form7},
+  TabelSemester in 'TabelSemester.pas' {Form8},
+  MenuUtama in 'MenuUtama.pas' {Form9};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TForm9, Form9);
+  Application.CreateForm(TForm8, Form8);
   Application.CreateForm(TForm6, Form6);
   Application.CreateForm(TForm7, Form7);
   Application.CreateForm(TForm5, Form5);
